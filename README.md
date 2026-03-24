@@ -1,9 +1,8 @@
-[![Build Status](https://travis-ci.org/ministryofjustice/pvb-instrumentation.svg?branch=master)](https://travis-ci.org/ministryofjustice/pvb-instrumentation)
-[![Code Climate](https://codeclimate.com/github/ministryofjustice/pvb-instrumentation/badges/gpa.svg)](https://codeclimate.com/github/ministryofjustice/pvb-instrumentation)
-# Pvb::Instrumentation
+# PVB Instrumentation
 
-Adds instrumentation to any Rail app. Includes default event processor classes 
-for Excon and Faraday.
+[![Ministry of Justice Repository Compliance Badge](https://github-community.service.justice.gov.uk/repository-standards/api/prison-visit-booking-instrumentation/badge?style=flat)](https://github-community.service.justice.gov.uk/repository-standards/prison-visit-booking-instrumentation)
+
+Adds instrumentation to any Rail app. Includes default event processor classes for Excon and Faraday.
 
 ## Installation
 
