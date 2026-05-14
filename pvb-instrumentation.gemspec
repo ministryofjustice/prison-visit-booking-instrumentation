@@ -30,7 +30,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
   spec.required_ruby_version = '>= 3.4.8'
 
-  spec.add_dependency 'activesupport', '~> 7.1.5'
+  spec.add_dependency 'activesupport', '>= 7.1.5'
   spec.add_dependency 'request_store', '~> 1.6.0'
   spec.add_development_dependency 'bundler'
   spec.add_development_dependency 'rake', '~> 13.2.1'
