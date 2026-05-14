@@ -28,6 +28,7 @@ Gem::Specification.new do |spec|
   spec.bindir        = 'exe'
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
+  spec.required_ruby_version = '>= 3.4.8'
 
   spec.add_dependency 'activesupport', '~> 7.1.5'
   spec.add_dependency 'request_store', '~> 1.6.0'
