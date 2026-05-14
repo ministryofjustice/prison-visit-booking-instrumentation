@@ -29,7 +29,7 @@ RSpec.describe PVB::Instrumentation::Excon::Response do
 
     it 'appends the response time to the total time' do
       subject.process
-      expect(PVB::Instrumentation.custom_log_items).to include(category => 2000.3)
+      expect(PVB::Instrumentation.custom_log_items[category]).to be_within(0.001).of(2000.3)
     end
   end
 end

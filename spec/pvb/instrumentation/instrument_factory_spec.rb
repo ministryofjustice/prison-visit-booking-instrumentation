@@ -4,11 +4,11 @@ require 'pvb/instrumentation/registry'
 
 RSpec.describe PVB::Instrumentation::Registry do
 
-  let(:start)      { double(Time) }
-  let(:finish)     { double(Time) }
+  let(:start)      { Time.now }
+  let(:finish)     { Time.now }
   let(:payload)    { double(Hash) }
   let(:event_name) { 'nomis_api.request' }
-  let(:setup_proc) { proc {|event| } }
+  let(:setup_proc) { proc {|event_name| } }
   let(:event)      do
     ActiveSupport::Notifications::Event.new(
       event_name, start, finish, '_id', payload
@@ -27,10 +27,10 @@ RSpec.describe PVB::Instrumentation::Registry do
   end
 
   describe '.for' do
-    describe "with 'nomis_api.request" do
+    describe "with 'nomis_api.request'" do
       it 'returns an instrumentation request' do
         PVB::Instrumentation::Registry.register(
-          event, PVB::Instrumentation::Excon::Request, setup_proc
+          event_name, PVB::Instrumentation::Excon::Request, setup_proc
         )
         expect(described_class.for(event))
           .to be_instance_of(PVB::Instrumentation::Excon::Request)

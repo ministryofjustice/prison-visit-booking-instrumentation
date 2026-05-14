@@ -4,5 +4,5 @@ AllCops:
 
   TargetRubyVersion: 2.7
 
-Metrics/LineLength:
+Layout/LineLength:
   Max: 90
