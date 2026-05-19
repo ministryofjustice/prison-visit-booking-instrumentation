@@ -2,7 +2,7 @@ AllCops:
   Exclude:
     - '*.gemspec'
 
-  TargetRubyVersion: 2.3
+  TargetRubyVersion: 2.7
 
-Metrics/LineLength:
+Layout/LineLength:
   Max: 90

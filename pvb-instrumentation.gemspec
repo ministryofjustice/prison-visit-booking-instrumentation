@@ -28,15 +28,16 @@ Gem::Specification.new do |spec|
   spec.bindir        = 'exe'
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
+  spec.required_ruby_version = '>= 3.4.8'
 
-  spec.add_dependency 'activesupport', '> 4.2'
-  spec.add_dependency 'request_store', '~> 1.3.2'
-  spec.add_development_dependency 'bundler', '~> 1.14'
-  spec.add_development_dependency 'rake', '~> 10.0'
-  spec.add_development_dependency 'rspec', '~> 3.0'
-  spec.add_development_dependency 'excon', '~> 0.55'
-  spec.add_development_dependency 'faraday', '~> 0.10.1'
+  spec.add_dependency 'activesupport', '>= 7.1.5'
+  spec.add_dependency 'request_store', '~> 1.6.0'
+  spec.add_development_dependency 'bundler'
+  spec.add_development_dependency 'rake', '~> 13.2.1'
+  spec.add_development_dependency 'rspec', '~> 3.13.2'
+  spec.add_development_dependency 'excon', '~> 1.4.2'
+  spec.add_development_dependency 'faraday', '~> 2.14.1'
   spec.add_development_dependency 'byebug'
   spec.add_development_dependency 'rubocop'
-  spec.add_development_dependency "appraisal"
+  spec.add_development_dependency 'appraisal'
 end

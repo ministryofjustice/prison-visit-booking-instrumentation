@@ -1,11 +1,7 @@
-appraise 'activesupport-4.2.9' do
-  gem 'activesupport', '4.2.9'
+appraise 'activesupport-7.1.5' do
+  gem 'activesupport', '7.1.5'
 end
 
-appraise 'activesupport-5.0.0' do
-  gem 'activesupport', '5.0.0'
-end
-
-appraise 'activesupport-5.1.2' do
-  gem 'activesupport', '5.1.2'
+appraise 'activesupport-7.2.3' do
+  gem 'activesupport', '7.2.3'
 end

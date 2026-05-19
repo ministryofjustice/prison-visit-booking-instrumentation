@@ -24,7 +24,7 @@ RSpec.shared_examples_for 'request time logger' do
 
   it 'appends request time to the total request time' do
     subject.process
-    expect(PVB::Instrumentation.custom_log_items).to include(category => 2000)
+    expect(PVB::Instrumentation.custom_log_items[category]).to be_within(0.001).of(2000)
   end
 
   it 'logs the current request time' do
